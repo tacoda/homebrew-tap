@@ -5,21 +5,21 @@
 class Keystone < Formula
   desc "Project harness for coding agents — scaffolds harness/ and per-agent activation files into your repo."
   homepage "https://github.com/tacoda/keystone"
-  version "2.4.0"
+  version "2.4.1"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/tacoda/keystone/releases/download/v2.4.0/keystone_2.4.0_darwin_x86_64.tar.gz"
-      sha256 "d239b646ed2d20620aa8a282318f783bde941379543ccaa6bad2155f04cfeb21"
+      url "https://github.com/tacoda/keystone/releases/download/v2.4.1/keystone_2.4.1_darwin_x86_64.tar.gz"
+      sha256 "c36395d7d3a80263933fad10bb363a41f6cb43e7cd04d1968bd8cd0c1fa5556e"
 
       define_method(:install) do
         bin.install "keystone"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/tacoda/keystone/releases/download/v2.4.0/keystone_2.4.0_darwin_arm64.tar.gz"
-      sha256 "57dcaa839204b12db6df4eb3e48c77019715bfeada6999f604a944b0b4722a13"
+      url "https://github.com/tacoda/keystone/releases/download/v2.4.1/keystone_2.4.1_darwin_arm64.tar.gz"
+      sha256 "34c4ff3d89dd20025854723311727977b2becb94b616e46351c94e8a796c123f"
 
       define_method(:install) do
         bin.install "keystone"
@@ -29,15 +29,15 @@ class Keystone < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tacoda/keystone/releases/download/v2.4.0/keystone_2.4.0_linux_x86_64.tar.gz"
-      sha256 "d17882a282f3922574291d7becb753f2b90cab92166000ddfd9f3badd584913c"
+      url "https://github.com/tacoda/keystone/releases/download/v2.4.1/keystone_2.4.1_linux_x86_64.tar.gz"
+      sha256 "b9190bfe9cd9e496199f80e706f9010c5f61094aa817058943ea671292411c14"
       define_method(:install) do
         bin.install "keystone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/tacoda/keystone/releases/download/v2.4.0/keystone_2.4.0_linux_arm64.tar.gz"
-      sha256 "f11934123859b0a90cd70c64f8f16f210acd080540846c88e6e0e85ea746af5b"
+      url "https://github.com/tacoda/keystone/releases/download/v2.4.1/keystone_2.4.1_linux_arm64.tar.gz"
+      sha256 "38d4431794615f56ee0d6d87268ca2964c035f36846b9085d977ec39f6f3b4c9"
       define_method(:install) do
         bin.install "keystone"
       end
