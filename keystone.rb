@@ -11,7 +11,7 @@ class Keystone < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/tacoda/keystone/releases/download/v3.0.0/keystone_3.0.0_darwin_x86_64.tar.gz"
-      sha256 "4eb01319f26c0fef1dc9869c3d63a74df5009d29217b3bf95481e6da36cd54df"
+      sha256 "6a84ae572332e6b4cdae025c29d67a5f7aa5fe1457b5d28d02e3791f9e9f90ca"
 
       define_method(:install) do
         bin.install "keystone"
@@ -19,7 +19,7 @@ class Keystone < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/tacoda/keystone/releases/download/v3.0.0/keystone_3.0.0_darwin_arm64.tar.gz"
-      sha256 "7c2be41968bb58d3c3a70a8ba2964e5b16e68e51a0684450491f791d94ff7148"
+      sha256 "7354e10bc1baf1836598d290fa95b41793540338b5bb540e73e96d1d5241ddc0"
 
       define_method(:install) do
         bin.install "keystone"
@@ -30,14 +30,14 @@ class Keystone < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/tacoda/keystone/releases/download/v3.0.0/keystone_3.0.0_linux_x86_64.tar.gz"
-      sha256 "40a057fe8b61b601684baf51d847db5161b8445fce55ee9d6b8f9111ead8d206"
+      sha256 "7054335d5710cd20e7cf40503e531edfb803317b07aec8d47d89debb47c2354c"
       define_method(:install) do
         bin.install "keystone"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/tacoda/keystone/releases/download/v3.0.0/keystone_3.0.0_linux_arm64.tar.gz"
-      sha256 "7424fef48873b5da77b61940816d8a1b16645514dc39ab5148162f1ff69354be"
+      sha256 "aa6855a3ecaf71f93e428a6a2b1b4cde99cd8b92d16e47fb83a1088ee299a607"
       define_method(:install) do
         bin.install "keystone"
       end
